@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>Adam's portfolio</title>
+        <script src="https://kit.fontawesome.com/d1e62e2f4f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img  class=" logo"src="../img/adam.png"  alt="i didn't find a logo yet">
+                    <ul id="sidemenu">
+                        <li><a href="#header"> Home</a></li>
+                        <li><a href="#about"> About</a></li>
+                        <li><a href="#services"> Services</a></li>
+                        <li><a href="#portfolio"> Portfolio</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hello, it's me <span>Adam</span><br> Yahya </h1>
+                </div>
+            </div>
+        </div>
+<!-- ----------------------------------------------about------------------------->    
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="../img/adam.png" alt="image de adam">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a newly graduated embedded system engineer, ambitious about the future and looking forward to the bright one. I'm also creative and self-driven</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Devolopment</span><br>HTML, CSS, Boostrap, Javascript</li>
+                                <li><span>Testing</span><br>Python (pytest,robotframework,selenium),JAVA</li>
+                                <li><span>Devops</span><br>Jenkins, Gitlab, Linux administration </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="Experience" >
+                            <ul>
+                                <li><span>SagemCom </span><br> As software tester <br> 02/2022 - 08/2022</li>
+                                <li><span>Fast</span><br> Front-end developer <br> 01/2021 - 05/2021</li>
+                                <li><span>Freelance</span><br>Web Scraping </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2019/2022</span><br>Issat sousse </li>
+                                <li><span>2022/Present</span><br>Esprit</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<!-------------------------------------services------------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Servives</h1>
+        <div class="servies-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Tester</h2>
+                <p>I conduct automated and manual tests to ensure the software created by developers is fit for purpose and any bugs or issues are removed within a product before it gets deployed to everyday users.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Front-end Developer</h2>
+                <p>I develop websites and applications using web technologies (i.e., HTML, CSS, DOM, and JavaScript).</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Devops</h2>
+                <p>I can ensure  integrating the project functions and resources across the product life cycle, right from planning, building, testing, and deployment to support. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------portfolio------------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="../img/jenkinn.png" alt="work1">
+                <div class="layer">
+                    <h3>Software Tester</h3>
+                    <p>Designed and implemented an automation algorithm of Friendly’s TR-069 ACS server using python and pytest framework</p>
+                    <p>deployed scripts across multiple platforms using a continuous integration server (jenkins)</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../img/socialmedia.png"alt="work2">
+                <div class="layer">
+                    <h3>Social Media Website </h3>
+                    <p>Created a Responsive Social Media Website With Theme Customization Using HTML CSS & JavaScript</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!---------------------------------contact-------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> adam21573919@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 96672468</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/adam.yahya.7169/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_adam_yahya_/?hl=fr"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/adam-yahya-933263198/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="../img/Blanc Minimaliste Photo Université CV (1) (2).pdf" class="btn btn2" download >Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form id="form" name="submit-to-google-sheet" >
+                    <input id="name" type="text" name="Name" placeholder="Your Name" required>
+                    <input id="email" type="email" name="email"  placeholder="Your Email" required>
+                    <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>Copyright Adam. Made by Adam Yahya</p>
+    </div>
+</div>
+
+creer une fonction en Javascript qui permet d'augmenter la quantité de ballons lors de clic sur le b
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for (tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+
+                validateInputs();
+            });
+
+            const setError = (element, message) => {
+                const inputControl = element.parentElement;
+                const errorDisplay = inputControl.querySelector('.error');
+
+                errorDisplay.innerText = message;
+                inputControl.classList.add('error');
+                inputControl.classList.remove('success')
+            }
+
+            const setSuccess = element => {
+                const inputControl = element.parentElement;
+                const errorDisplay = inputControl.querySelector('.error');
+
+                errorDisplay.innerText = '';
+                inputControl.classList.add('success');
+                inputControl.classList.remove('error');
+            };
+
+            const isValidEmail = email => {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+
+            const validateInputs = () => {
+                const nameValue = name.value.trim();
+                const emailValue = email.value.trim();
+                
+                if(nameValue === '') {
+                    setError(name, 'name is required');
+                } else {
+                    setSuccess(name);
+                }
+
+                if(emailValue === '') {
+                    setError(email, 'Email is required');
+                } else if (!isValidEmail(emailValue)) {
+                    setError(email, 'Provide a valid email address');
+                } else {
+                    setSuccess(email);
+                }
+                };
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbx4hmtjJqRO03ZHmzYB83WqYRtzMj6fgvh9Ya8THQmx3wpF7Z0kiv532-JRM7NokV2hGw/exec'
+                const form = document.forms['submit-to-google-sheet']
+
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+    </body>
+</html>
